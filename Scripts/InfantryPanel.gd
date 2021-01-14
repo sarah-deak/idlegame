@@ -19,7 +19,7 @@ func _ready():
 
 func update_panel():
 	if troop_selected == null:
-		pass
+		troop_selected = Data.infantry[0]
 	$L_troop_type.text = troop_selected.type
 	$L_troop_name.text = troop_selected.name
 	$L_troop_count.text = str(troop_selected.count) + " Troops"

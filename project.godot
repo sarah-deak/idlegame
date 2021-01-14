@@ -9,13 +9,37 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node2D",
+"base": "Troop",
 "class": "Infantry",
 "language": "GDScript",
 "path": "res://Troops/Infantry/Infantry.gd"
+}, {
+"base": "Troop",
+"class": "Mounted",
+"language": "GDScript",
+"path": "res://Troops/Mounted/Mounted.gd"
+}, {
+"base": "Troop",
+"class": "Ranged",
+"language": "GDScript",
+"path": "res://Troops/Ranged/Ranged.gd"
+}, {
+"base": "Troop",
+"class": "Siege",
+"language": "GDScript",
+"path": "res://Troops/Siege/Siege.gd"
+}, {
+"base": "Node2D",
+"class": "Troop",
+"language": "GDScript",
+"path": "res://Troops/Troop.gd"
 } ]
 _global_script_class_icons={
-"Infantry": ""
+"Infantry": "",
+"Mounted": "",
+"Ranged": "",
+"Siege": "",
+"Troop": ""
 }
 
 [application]

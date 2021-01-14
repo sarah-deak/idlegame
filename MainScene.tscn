@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/store.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/B_infantry_popup.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/InfantryPopup.gd" type="Script" id=4]
 [ext_resource path="res://Scripts/InfantryPanel.gd" type="Script" id=5]
+[ext_resource path="res://RangedPanel.gd" type="Script" id=6]
+[ext_resource path="res://MountedPanel.gd" type="Script" id=7]
+[ext_resource path="res://SiegePanel.gd" type="Script" id=8]
 
 [sub_resource type="Theme" id=1]
 PopupMenu/icons/ = null
@@ -52,37 +55,43 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 443.0
-margin_top = 4.0
-margin_right = 591.0
-margin_bottom = 37.0
+[node name="Top_button_container" type="HBoxContainer" parent="."]
+margin_left = 402.413
+margin_top = 3.05612
+margin_right = 751.413
+margin_bottom = 36.0561
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MenuButton" type="Button" parent="HBoxContainer"]
-margin_right = 48.0
-margin_bottom = 33.0
-text = "Menu"
+[node name="B_territory" type="Button" parent="Top_button_container"]
+margin_right = 66.0
+margin_bottom = 32.0
+text = "Territory"
 
-[node name="UpgradesButton" type="Button" parent="HBoxContainer"]
-margin_left = 52.0
-margin_right = 124.0
-margin_bottom = 33.0
+[node name="B_upgrades" type="Button" parent="Top_button_container"]
+margin_left = 70.0
+margin_right = 142.0
+margin_bottom = 32.0
 text = "Upgrades"
 
-[node name="ShopButton" type="Button" parent="HBoxContainer"]
-margin_left = 128.0
-margin_right = 171.0
-margin_bottom = 33.0
+[node name="B_achievements" type="Button" parent="Top_button_container"]
+margin_left = 146.0
+margin_right = 250.0
+margin_bottom = 32.0
+text = "Achievements"
+
+[node name="B_shop" type="Button" parent="Top_button_container"]
+margin_left = 254.0
+margin_right = 297.0
+margin_bottom = 32.0
 text = "Shop"
 
-[node name="Button" type="Button" parent="HBoxContainer"]
-margin_left = 175.0
-margin_right = 237.0
-margin_bottom = 33.0
-text = "[button]"
+[node name="B_menu" type="Button" parent="Top_button_container"]
+margin_left = 301.0
+margin_right = 349.0
+margin_bottom = 32.0
+text = "Menu"
 
 [node name="TroopBox" type="VBoxContainer" parent="."]
 margin_left = 5.04358
@@ -175,6 +184,7 @@ margin_top = 154.0
 margin_right = 242.0
 margin_bottom = 254.0
 rect_min_size = Vector2( 0, 100 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -204,9 +214,9 @@ margin_bottom = 50.0625
 text = "[Troop Count]"
 
 [node name="B_add_troop" type="Button" parent="TroopBox/RangedPanel"]
-margin_left = 164.556
+margin_left = 206.428
 margin_top = 64.4142
-margin_right = 188.556
+margin_right = 230.428
 margin_bottom = 84.4142
 text = "+"
 __meta__ = {
@@ -218,6 +228,7 @@ margin_top = 258.0
 margin_right = 242.0
 margin_bottom = 358.0
 rect_min_size = Vector2( 0, 100 )
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -261,6 +272,7 @@ margin_top = 362.0
 margin_right = 242.0
 margin_bottom = 462.0
 rect_min_size = Vector2( 0, 100 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -301,6 +313,9 @@ text = "+"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="HBoxContainer/MenuButton" to="." method="_on_MenuButton_pressed"]
+[connection signal="pressed" from="Top_button_container/B_menu" to="." method="_on_MenuButton_pressed"]
 [connection signal="pressed" from="TroopBox/InfantryPanel/B_add_troop" to="TroopBox/InfantryPanel" method="_on_B_add_troop_pressed"]
 [connection signal="id_pressed" from="TroopBox/InfantryPanel/B_troop_popup/troop_popup" to="TroopBox/InfantryPanel" method="_on_troop_popup_id_pressed"]
+[connection signal="pressed" from="TroopBox/RangedPanel/B_add_troop" to="TroopBox/RangedPanel" method="_on_B_add_troop_pressed"]
+[connection signal="pressed" from="TroopBox/MountedPanel/B_add_troop" to="TroopBox/MountedPanel" method="_on_B_add_troop_pressed"]
+[connection signal="pressed" from="TroopBox/SiegePanel/B_add_troop" to="TroopBox/SiegePanel" method="_on_B_add_troop_pressed"]

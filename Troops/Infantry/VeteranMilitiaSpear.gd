@@ -15,6 +15,7 @@ func _ready():
 	damage = 1
 	xp = 0
 	level = 1
+	mult = 1.25
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
