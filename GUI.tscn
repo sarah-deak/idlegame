@@ -1,0 +1,48 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonContainer" type="MarginContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopButtons" type="HBoxContainer" parent="ButtonContainer"]
+margin_right = 201.0
+margin_bottom = 40.0
+
+[node name="Button" type="Button" parent="ButtonContainer/TopButtons"]
+margin_right = 37.0
+margin_bottom = 40.0
+text = "text"
+
+[node name="Button2" type="Button" parent="ButtonContainer/TopButtons"]
+margin_left = 41.0
+margin_right = 78.0
+margin_bottom = 40.0
+text = "text"
+
+[node name="Button3" type="Button" parent="ButtonContainer/TopButtons"]
+margin_left = 82.0
+margin_right = 119.0
+margin_bottom = 40.0
+text = "text"
+
+[node name="Button4" type="Button" parent="ButtonContainer/TopButtons"]
+margin_left = 123.0
+margin_right = 160.0
+margin_bottom = 40.0
+text = "text"
+
+[node name="Menu" type="Button" parent="ButtonContainer/TopButtons"]
+margin_left = 164.0
+margin_right = 201.0
+margin_bottom = 40.0
+text = "text"

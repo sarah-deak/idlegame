@@ -1,0 +1,341 @@
+[gd_scene format=2]
+
+[node name="Village" type="Node2D"]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 135.214
+margin_top = 36.8024
+margin_right = 859.214
+margin_bottom = 552.802
+columns = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="GridContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel13" type="Panel" parent="GridContainer"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel14" type="Panel" parent="GridContainer"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel17" type="Panel" parent="GridContainer"]
+margin_left = 312.0
+margin_right = 412.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel18" type="Panel" parent="GridContainer"]
+margin_left = 416.0
+margin_right = 516.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel19" type="Panel" parent="GridContainer"]
+margin_left = 520.0
+margin_right = 620.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel20" type="Panel" parent="GridContainer"]
+margin_left = 624.0
+margin_right = 724.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel21" type="Panel" parent="GridContainer"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel22" type="Panel" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 104.0
+margin_right = 204.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel23" type="Panel" parent="GridContainer"]
+margin_left = 208.0
+margin_top = 104.0
+margin_right = 308.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel24" type="Panel" parent="GridContainer"]
+margin_left = 312.0
+margin_top = 104.0
+margin_right = 412.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel25" type="Panel" parent="GridContainer"]
+margin_left = 416.0
+margin_top = 104.0
+margin_right = 516.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel26" type="Panel" parent="GridContainer"]
+margin_left = 520.0
+margin_top = 104.0
+margin_right = 620.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel27" type="Panel" parent="GridContainer"]
+margin_left = 624.0
+margin_top = 104.0
+margin_right = 724.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel28" type="Panel" parent="GridContainer"]
+margin_top = 208.0
+margin_right = 100.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel15" type="Panel" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 208.0
+margin_right = 204.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel16" type="Panel" parent="GridContainer"]
+margin_left = 208.0
+margin_top = 208.0
+margin_right = 308.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="GridContainer"]
+margin_left = 312.0
+margin_top = 208.0
+margin_right = 412.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="Panel" parent="GridContainer"]
+margin_left = 416.0
+margin_top = 208.0
+margin_right = 516.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel4" type="Panel" parent="GridContainer"]
+margin_left = 520.0
+margin_top = 208.0
+margin_right = 620.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel5" type="Panel" parent="GridContainer"]
+margin_left = 624.0
+margin_top = 208.0
+margin_right = 724.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel6" type="Panel" parent="GridContainer"]
+margin_top = 312.0
+margin_right = 100.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel7" type="Panel" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 312.0
+margin_right = 204.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel8" type="Panel" parent="GridContainer"]
+margin_left = 208.0
+margin_top = 312.0
+margin_right = 308.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel9" type="Panel" parent="GridContainer"]
+margin_left = 312.0
+margin_top = 312.0
+margin_right = 412.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel10" type="Panel" parent="GridContainer"]
+margin_left = 416.0
+margin_top = 312.0
+margin_right = 516.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel11" type="Panel" parent="GridContainer"]
+margin_left = 520.0
+margin_top = 312.0
+margin_right = 620.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel12" type="Panel" parent="GridContainer"]
+margin_left = 624.0
+margin_top = 312.0
+margin_right = 724.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel29" type="Panel" parent="GridContainer"]
+margin_top = 416.0
+margin_right = 100.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel30" type="Panel" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 416.0
+margin_right = 204.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel31" type="Panel" parent="GridContainer"]
+margin_left = 208.0
+margin_top = 416.0
+margin_right = 308.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel32" type="Panel" parent="GridContainer"]
+margin_left = 312.0
+margin_top = 416.0
+margin_right = 412.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel33" type="Panel" parent="GridContainer"]
+margin_left = 416.0
+margin_top = 416.0
+margin_right = 516.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel34" type="Panel" parent="GridContainer"]
+margin_left = 520.0
+margin_top = 416.0
+margin_right = 620.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

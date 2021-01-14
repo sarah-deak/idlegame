@@ -214,10 +214,10 @@ margin_bottom = 50.0625
 text = "[Troop Count]"
 
 [node name="B_add_troop" type="Button" parent="TroopBox/RangedPanel"]
-margin_left = 206.428
-margin_top = 64.4142
-margin_right = 230.428
-margin_bottom = 84.4142
+margin_left = 168.287
+margin_top = 66.5331
+margin_right = 192.287
+margin_bottom = 86.5331
 text = "+"
 __meta__ = {
 "_edit_use_anchors_": false
