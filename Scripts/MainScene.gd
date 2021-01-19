@@ -21,17 +21,3 @@ func _process(delta):
 	if (curr_ranged): Data.money += (curr_ranged.count * .33 * delta * curr_ranged.mult)
 	if (curr_mounted): Data.money += (curr_mounted.count * .45 * delta * curr_mounted.mult)
 	if (curr_siege): Data.money += (curr_siege.count * .67 * delta * curr_siege.mult)
-	$ResourcePanel.UpdateUI()
-	
-	pass
-
-
-func _on_MenuButton_pressed():
-	get_tree().change_scene("res://MainMenu.tscn")
-	pass # Replace with function body.
-
-
-
-func _on_infantry_popup_ready():
-	
-	pass # Replace with function body.

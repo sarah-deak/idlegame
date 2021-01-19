@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/store.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/B_infantry_popup.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/InfantryPopup.gd" type="Script" id=4]
 [ext_resource path="res://Scripts/InfantryPanel.gd" type="Script" id=5]
-[ext_resource path="res://RangedPanel.gd" type="Script" id=6]
-[ext_resource path="res://MountedPanel.gd" type="Script" id=7]
-[ext_resource path="res://SiegePanel.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/RangedPanel.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/MountedPanel.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/SiegePanel.gd" type="Script" id=8]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Theme" id=1]
 PopupMenu/icons/ = null
@@ -15,83 +15,7 @@ PopupMenu/icons/ = null
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="ResourcePanel" type="Panel" parent="."]
-margin_left = 373.0
-margin_top = 548.0
-margin_right = 1011.0
-margin_bottom = 599.0
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="MoneyLabel" type="Label" parent="ResourcePanel"]
-margin_left = 43.0
-margin_top = 7.0
-margin_right = 125.0
-margin_bottom = 42.0
-text = "[money]"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TerritoryLabel" type="Label" parent="ResourcePanel"]
-margin_left = 204.543
-margin_top = 6.06091
-margin_right = 286.543
-margin_bottom = 41.0609
-text = "[Territory]"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TroopLabel" type="Label" parent="ResourcePanel"]
-margin_left = 384.543
-margin_top = 7.06091
-margin_right = 466.543
-margin_bottom = 42.0609
-text = "[troop]"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Top_button_container" type="HBoxContainer" parent="."]
-margin_left = 402.413
-margin_top = 3.05612
-margin_right = 751.413
-margin_bottom = 36.0561
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="B_territory" type="Button" parent="Top_button_container"]
-margin_right = 66.0
-margin_bottom = 32.0
-text = "Territory"
-
-[node name="B_upgrades" type="Button" parent="Top_button_container"]
-margin_left = 70.0
-margin_right = 142.0
-margin_bottom = 32.0
-text = "Upgrades"
-
-[node name="B_achievements" type="Button" parent="Top_button_container"]
-margin_left = 146.0
-margin_right = 250.0
-margin_bottom = 32.0
-text = "Achievements"
-
-[node name="B_shop" type="Button" parent="Top_button_container"]
-margin_left = 254.0
-margin_right = 297.0
-margin_bottom = 32.0
-text = "Shop"
-
-[node name="B_menu" type="Button" parent="Top_button_container"]
-margin_left = 301.0
-margin_right = 349.0
-margin_bottom = 32.0
-text = "Menu"
+[node name="GUI" parent="." instance=ExtResource( 9 )]
 
 [node name="TroopBox" type="VBoxContainer" parent="."]
 margin_left = 5.04358
@@ -313,7 +237,6 @@ text = "+"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="Top_button_container/B_menu" to="." method="_on_MenuButton_pressed"]
 [connection signal="pressed" from="TroopBox/InfantryPanel/B_add_troop" to="TroopBox/InfantryPanel" method="_on_B_add_troop_pressed"]
 [connection signal="id_pressed" from="TroopBox/InfantryPanel/B_troop_popup/troop_popup" to="TroopBox/InfantryPanel" method="_on_troop_popup_id_pressed"]
 [connection signal="pressed" from="TroopBox/RangedPanel/B_add_troop" to="TroopBox/RangedPanel" method="_on_B_add_troop_pressed"]
