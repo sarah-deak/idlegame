@@ -26,3 +26,7 @@ func _on_Village_pressed():
 
 func _on_Territory_pressed():
 	get_tree().change_scene("res://MainScene.tscn")
+
+
+func _on_Exit_pressed():
+	get_tree().quit()

@@ -52,6 +52,12 @@ config/icon="res://icon.png"
 
 Data="*res://Data/Data.tscn"
 
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/stretch/mode="viewport"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
