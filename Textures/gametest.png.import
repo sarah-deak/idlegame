@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/gametest.png-1112c6bccb912fd110867cdbfe25250f.image"
+
+[deps]
+
+source_file="res://Textures/gametest.png"
+dest_files=[ "res://.import/gametest.png-1112c6bccb912fd110867cdbfe25250f.image" ]
+
+[params]
+

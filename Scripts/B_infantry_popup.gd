@@ -12,8 +12,10 @@ func _ready():
 
 func _pressed():
 	$troop_popup.popup()
-	$troop_popup.set_position(get_parent().get_parent().get_position() + get_parent().get_position() + get_position())
-	$troop_popup.set_position($troop_popup.get_position() + Vector2(50,0) )
+#	$troop_popup.set_position(get_parent().get_parent().get_position() + get_parent().get_position() + get_position())
+#	$troop_popup.set_position($troop_popup.get_position() + Vector2(50,0) )
+
+	$troop_popup.set_position(get_global_transform().origin + Vector2(60,0))
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

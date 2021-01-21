@@ -1,6 +1,4 @@
-extends Panel
-
-
+extends MarginContainer
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -20,9 +18,9 @@ func _ready():
 func update_panel():
 	if troop_selected == null:
 		troop_selected = Data.infantry[0]
-	$L_troop_type.text = troop_selected.type
-	$L_troop_name.text = troop_selected.name
-	$L_troop_count.text = str(troop_selected.count) + " Troops"
+	find_node("L_troop_type").text = troop_selected.type
+	find_node("L_troop_name").text = troop_selected.name
+	find_node("L_troop_count").text = str(troop_selected.count) + " Troops"
 	
 
 func _on_troop_popup_id_pressed(id):

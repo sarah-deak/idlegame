@@ -13,8 +13,9 @@
     <li>Switch gameplay loop to: Troop -> territory -> village -> money -> troop</li>
     <li>Implement troop counter metric</li>
     <li>Add research/upgrades page</li>
+    <li>Remake troop panel structures</li>
     <li>extend todo list</li>
-<ul>
+</ul>
 <h1> Bugs <h1>
 <ul>
     <li>Going to main menu and clicking new game resets the text but not money or troop count and crashes on clicking any unlock</li>
